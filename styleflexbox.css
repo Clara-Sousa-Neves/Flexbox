@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.container {
+    background-color: whitesmoke;
+}
+
+.box {
+    background-color: Dodgerblue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightgrey;
+}
+
+#flex {
+    display: flex;
+}
+
+.containerone {
+    width: 150px;
+    border: 1px solid grey;
+    display: inline-flex;
+}
+
+
+/* justify-content property*/
+
+.containertwo {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.boxtwo {
+    height: 75px;
+    width: 100px;
+    background-color: dodgerblue;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
+
+#flexstart {
+    justify-content: flex-start;
+}
+
+#flexend {
+    justify-content: flex-end;
+}
+
+#center {
+    justify-content: center;
+}
+
+#spacearound {
+    justify-content: space-around;
+}
+
+#spacebetween {
+    justify-content: space-between;
+}
+
+
+/* align-items property*/
+
+.containerthree {
+    height: 150px;
+    background-color: WhiteSmoke;
+    display: flex;
+    justify-content: center;
+}
+
+.left,
+.center,
+.right {
+    min-height: 75px;
+    width: 125px;
+    background-color: DodgerBlue;
+    border: 2px solid lightgrey;
+}
+
+#baseline .center {
+    height: 100px;
+    width: 100px;
+    border: 5px solid turquoise;
+}
+
+#flexstartai {
+    align-items: flex-start;
+}
+
+#flexendai {
+    align-items: flex-end;
+}
+
+#centerai {
+    align-items: center;
+}
+
+#baseline {
+    align-items: baseline;
+}
+
+
+/*FLEX-GROW & FLEX-SHRINK*/
+
+.top,
+.middle,
+.bottom {
+    width: 100px;
+    height: 100px;
+    background-color: Dodgerblue;
+    border: 2px solid lightgrey;
+    margin: 10px 30px;
+}
+
+.top.side {
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.top.center {
+    flex-grow: 1;
+}
+
+.middle.side {
+    flex-shrink: 0;
+}
+
+.middle.center {
+    flex-grow: 1;
+}
+
+.bottom.side {
+    flex-grow: 1;
+}
+
+.bottom.center {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+#top,
+#middle,
+#bottom {
+    display: flex;
+    background-color: Whitesmoke;
+    justify-content: center;
+    min-height: 200px;
+    align-items: center;
+}
+
+
+/*FLEX-BASIS*/
+
+.grow,
+.shrink {
+    width: 100px;
+    height: 100px;
+    background-color: Dodgerblue;
+    border: 2px solid lightgrey;
+    margin: 10px 30px;
+}
+
+.grow.side {
+    flex-basis: 60px;
+    flex-grow: 1;
+}
+
+.grow.center {
+    flex-grow: 3;
+}
+
+.shrink.side {
+    flex-basis: 300px;
+    flex-shrink: 3;
+}
+
+.shrink.center {
+    flex-shrink: 2;
+    flex-basis: 150px;
+}
+
+#grows,
+#shrinks {
+    display: flex;
+    background-color: Whitesmoke;
+    justify-content: center;
+    min-height: 200px;
+    align-items: center;
+}
+
+
+/*FLEX
+.small {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 100px;
+}
+igual a
+.small {
+  flex: 1 2 100px;
+}
+
+.big {
+ flex: 2 1;
+} flex-grow e flex-shrink, not flex-basis.
+
+.small {
+  flex: 1 20px;
+} flex-grow e flex-basis. Note that there is no way to set only flex-shrink and flex-basis using 2 values.
+
+*/
+
+
+/*FLEX-WRAP*/
+
+.containerfour {
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    min-height: 125px;
+    justify-content: space-around;
+}
+
+.boxfour {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+}
+
+#wrap {
+    flex-wrap: wrap;
+}
+
+#nowrap {
+    flex-wrap: nowrap;
+}
+
+#reverse {
+    flex-wrap: wrap-reverse;
+}
+
+
+/*ALIGN-CONTENT*/
+
+.containerfive {
+    height: 300px;
+    width: 600px;
+    background-color: WhiteSmoke;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.leftac,
+.centerac,
+.rightac {
+    min-height: 75px;
+    width: 200px;
+    margin: 2px;
+    background-color: DodgerBlue;
+    border: 2px solid lightgrey;
+}
+
+#flexstart {
+    align-content: flex-start;
+}
+
+#flexend {
+    align-content: flex-end;
+}
+
+#center {
+    align-content: center;
+}
+
+#between {
+    align-content: space-between;
+}
+
+#around {
+    align-content: space-around;
+}
+
+
+/*FLEX-DIRECTION*/
+
+.containersix {
+    background-color: dodgerblue;
+    display: flex;
+    max-height: 600px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxsix {
+    background-color: whitesmoke;
+    border: 1px solid white;
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+#row {
+    flex-direction: row;
+}
+
+#row-reverse {
+    flex-direction: row-reverse;
+}
+
+#column {
+    flex-direction: column;
+}
+
+#column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+/*
+FLEX-FLOW
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+The first value in the flex-flow declaration is a flex-direction value and the second is a flex-wrap value. All values for flex-direction and flex-wrap are accepted.
+
+*/

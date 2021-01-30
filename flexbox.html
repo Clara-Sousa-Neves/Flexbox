@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styleflexbox.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <p>DISPLAY</p>
+            <h1>Display: Flex</h1>
+            <div class="container" id="flex">
+                <div class="box">
+                    <h2>1</h2>
+                </div>
+                <div class="box">
+                    <h2>2</h2>
+                </div>
+                <div class="box">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <h1>Display: Block</h1>
+            <div class="container" id="block">
+                <div class="box">
+                    <h2>1</h2>
+                </div>
+                <div class="box">
+                    <h2>2</h2>
+                </div>
+                <div class="box">
+                    <h2>3</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>INLINE-FLEX</p>
+            <div class="containerone">
+                <div class="box">
+                    <h3>1</h3>
+                </div>
+                <div class="box">
+                    <h3>2</h3>
+                </div>
+                <div class="box">
+                    <h3>3</h3>
+                </div>
+            </div>
+            <div class="containerone">
+                <div class="box">
+                    <h3>1</h3>
+                </div>
+                <div class="box">
+                    <h3>2</h3>
+                </div>
+                <div class="box">
+                    <h3>3</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>JUSTIFY-CONTENT</p>
+            <h1>Flex Start</h1>
+            <div class="containertwo" id="flexstart">
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+            </div>
+            <h1>Flex End</h1>
+            <div class="containertwo" id="flexend">
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+            </div>
+            <h1>Center</h1>
+            <div class="containertwo" id="center">
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+            </div>
+            <h1>Space Around</h1>
+            <div class="containertwo" id="spacearound">
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+            </div>
+            <h1>Space Between</h1>
+            <div class="containertwo" id="spacebetween">
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+                <div class="boxtwo"></div>
+            </div>
+        </section>
+        <section>
+            <p>ALIGN-ITEMS</p>
+            <h1>Flex Start</h1>
+            <div class="containerthree" id="flexstartai">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Flex End</h1>
+            <div class="containerthree" id="flexendai">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Center</h1>
+            <div class="containerthree" id="centerai">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Baseline</h1>
+            <div class="containerthree" id="baseline">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+            <h1>Stretch</h1>
+            <div class="containerthree" id="stretch">
+                <div class="left"></div>
+                <div class="center"></div>
+                <div class="right"></div>
+            </div>
+        </section>
+        <section>
+            <p>FLEX-GROW & FLEX-SHRINK</p>
+            <h1>Step 1</h1>
+            <div id="top">
+                <div class="top side">
+                    <h2>1</h2>
+                </div>
+                <div class="top center">
+                    <h2>2</h2>
+                </div>
+                <div class="top side">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <h1>Step 2</h1>
+            <div id="middle">
+                <div class="middle side">
+                    <h2>1</h2>
+                </div>
+                <div class="middle center">
+                    <h2>2</h2>
+                </div>
+                <div class="middle side">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <h1>Step 3</h1>
+            <div id="bottom">
+                <div class="bottom side">
+                    <h2>1</h2>
+                </div>
+                <div class="bottom center">
+                    <h2>2</h2>
+                </div>
+                <div class="bottom side">
+                    <h2>3</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>FLEX-BASIS</p>
+            <h1>Grows</h1>
+            <div id="grows">
+                <div class="grow side">
+                    <h2>1</h2>
+                </div>
+                <div class="grow center">
+                    <h2>2</h2>
+                </div>
+                <div class="grow side">
+                    <h2>3</h2>
+                </div>
+            </div>
+            <h1>Shrinks</h1>
+            <div id="shrinks">
+                <div class="shrink side">
+                    <h2>1</h2>
+                </div>
+                <div class="shrink center">
+                    <h2>2</h2>
+                </div>
+                <div class="shrink side">
+                    <h2>3</h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>FLEX-WRAP</p>
+            <h1>Flex-Wrap: Wrap</h1>
+            <div class="containerfour" id="wrap">
+                <div class="boxfour">
+                    <h3>1</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>2</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>3</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>4</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>5</h3>
+                </div>
+            </div>
+            <h1>Flex-Wrap: No-Wrap</h1>
+            <div class="containerfour" id="nowrap">
+                <div class="boxfour">
+                    <h3>1</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>2</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>3</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>4</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>5</h3>
+                </div>
+            </div>
+            <h1>Flex-Wrap: Wrap-Reverse</h1>
+            <div class="containerfour" id="reverse">
+                <div class="boxfour">
+                    <h3>1</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>2</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>3</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>4</h3>
+                </div>
+                <div class="boxfour">
+                    <h3>5</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>ALIGN-CONTENT</p>
+            <h1>Flex Start</h1>
+            <div class="containerfive" id="flexstart">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+            <h1>Flex End</h1>
+            <div class="containerfive" id="flexend">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+            <h1>Center</h1>
+            <div class="containerfive" id="center">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+            <h1>Space Between</h1>
+            <div class="containerfive" id="between">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+            <h1>Space Around</h1>
+            <div class="containerfive" id="around">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+            <h1>Stretch</h1>
+            <div class="containerfive" id="stretch">
+                <div class="leftac"></div>
+                <div class="centerac"></div>
+                <div class="rightac"></div>
+            </div>
+        </section>
+        <section>
+            <p>FLEX-DIRECTION</p>
+            <h1>Flex-Direction: Row</h1>
+            <div class="containersix" id="row">
+                <div class="boxsix">
+                    <h2>1</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>2</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>3</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>4</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>5</h2>
+                </div>
+            </div>
+            <h1>Flex-Direction: Row-Reverse</h1>
+            <div class="containersix" id="row-reverse">
+                <div class="boxsix">
+                    <h2>1</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>2</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>3</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>4</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>5</h2>
+                </div>
+            </div>
+            <h1>Flex-Direction: Column</h1>
+            <div class="containersix" id="column">
+                <div class="boxsix">
+                    <h2>1</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>2</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>3</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>4</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>5</h2>
+                </div>
+            </div>
+            <h1>Flex-Direction: Column-Reverse</h1>
+            <div class="containersix" id="column-reverse">
+                <div class="boxsix">
+                    <h2>1</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>2</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>3</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>4</h2>
+                </div>
+                <div class="boxsix">
+                    <h2>5</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>ALL RIGHTS RESERVED 2021</p>
+    </footer>
+</body>
+
+</html>
