@@ -333,12 +333,32 @@ igual a
 }
 
 
-/*
-FLEX-FLOW
-.container {
-  display: flex;
-  flex-flow: column wrap;
+.main {
+    background-color: lightgrey;
+    width: 400px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-The first value in the flex-flow declaration is a flex-direction value and the second is a flex-wrap value. All values for flex-direction and flex-wrap are accepted.
 
-*/
+.containerseven {
+    width: 300px;
+    height: 300px;
+    background-color: dodgerblue;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    height: 75px;
+    width: 75px;
+    background-color: whitesmoke;
+    border: 1px solid snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
